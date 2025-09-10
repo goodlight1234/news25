@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시노펙스 뉴스</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0;
+        }
+
+        .meta-info {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            color: #004085;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .quote {
+            background-color: #f0f8ff;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #444;
+            border-radius: 4px;
+        }
+
+        .quote p {
+            margin: 0;
+            text-align: justify;
+        }
+
+        .quote-author {
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .highlight-box {
+            background-color: #e6f7ff;
+            border: 1px solid #b3e0ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .strong-highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .article-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Post Navigation Styles */
+        .post-navigation {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .post-link {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .post-link:hover {
+            background-color: #e0e0e0;
+            color: #007bff;
+        }
+
+        .post-link .arrow {
+            font-size: 1.2em;
+            color: #007bff;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .post-link.prev {
+            justify-content: flex-start;
+        }
+
+        .post-link.next {
+            justify-content: flex-end;
+        }
+
+        .post-link.prev .arrow {
+            transform: none;
+            margin-left: -5px;
+        }
+
+        .post-link.next .arrow {
+            transform: none;
+            margin-right: -5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>시노펙스, AI 플랫폼 ‘넥스케어’ 서비스로 여행투석 시대 개막!</h1>
+        <p class="meta-info">시노펙스 ・ 6시간 전</p>
+    </div>
+
+    <div class="content">
+        <h2>여행 혈액투석 AI 플랫폼 ‘넥스케어’ 출시</h2>
+        <ul>
+            <li>구글 플레이스토어에서 ‘넥스케어’ 앱 다운로드 가능</li>
+            <li>국내 서울, 부산, 제주, 인천 지역 우선 시행</li>
+            <li>세계여행투석네트워크(WTDM)와 연계, 해외 여행 투석 서비스 예정</li>
+        </ul>
+
+        <p>‘투석 환우의 꿈’, ‘여행 투석 시대’가 개막되었습니다. 시노펙스는 구글 플레이스토어를 통해 여행 혈액투석 AI 플랫폼인 ‘넥스케어(NexCare)’ 서비스가 시작됐다고 밝혔습니다.</p>
+        
+        <p>국내 최초 여행투석 플랫폼인 ‘넥스케어(NexCare)’는 시노펙스 AI사업팀과 여행투석 플랫폼 기업인 힐넥서스가 공동으로 개발했습니다. 지난 6월 ‘KSN 2025 학술대회’를 통해 데모 버전을 공개한 후 기능을 업데이트하여 이번에 정식 서비스를 시작했습니다.</p>
+        
+        <p>힐넥서스(대표 진성호)는 한국, 대만, 홍콩, 일본 등 아시아 및 동남아 지역에서 105개 혈액투석 전문 센터가 참여하고 있는 세계여행투석네트워크(WTDM)와 독점 계약이 되어 있으며, 시노펙스가 지분 60%를 보유하고 있습니다.</p>
+        
+        <div class="quote">
+            <p>힐넥서스 진성호 대표는 “현재 서비스되는 지역은 서울, 제주, 부산, 인천 4개 지역의 11개 혈액투석 전문 병원에서 여행투석 예약이 가능하다”고 말하고, “올해 말까지 국내 주요 여행 지역을 중심으로 추가 지역을 확대해 나가고 2026년에는 해외여행 서비스를 시작할 계획이다”라고 밝혔습니다.</p>
+        </div>
+        
+        <p>진 대표는 또한 “구글 플레이스토어에 이어 애플 앱스토어를 통해서도 ‘넥스케어’를 다운로드받을 수 있도록 준비하고 있으며, 투석 치료 연속성과 여행의 자유를 동시에 보장할 수 있도록 추가적인 서비스 품목을 확대해 나갈 계획”이라고 설명했습니다.</p>
+        
+        <p>‘넥스케어(NexCare)’는 지난 9월 7일 부산 벡스코에서 열린 대한신장학회 부울경 심포지엄에서 국내외 의료진 약 1,200명을 대상으로 주요 기능과 실제 활용 방안이 소개되어 많은 관심을 받았습니다.</p>
+        
+        <p>시노펙스는 ‘넥스케어(NexCare)’를 기반으로 한국, 일본, 대만, 중국 등 아시아 주요 국가에서의 서비스 확산을 추진하는 한편 글로벌 의료기관과의 파트너십을 확대해 나갈 계획입니다.</p>
+    </div>
+
+    <div class="post-navigation">
+        <a href="https://goodlight1234.github.io/news24/" class="post-link prev"><span class="arrow">▲</span> 시노펙스, 日 국제학회에서 혈액투석 제품 및 임상 결과 소개!</a>
+        <a href="" class="post-link next">다음글<span class="arrow">▼</span></a>
+    </div>
+
+</div>
+
+</body>
+</html>
